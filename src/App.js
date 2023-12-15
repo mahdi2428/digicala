@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import Home from './page/home';
+import Category from './page/category';
+import Product from './page/product';
+import StickyBox from "react-sticky-box";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path= "/" element={<Home />} />
+          <Route path='/category' element={<Category />} />
+          <Route path='/product' element={<Product />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

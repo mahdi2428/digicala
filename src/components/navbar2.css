@@ -1,0 +1,15 @@
+#navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    transition: top 0.3s;
+  }
+ .group11{
+  display: none;
+}
+ .group1:hover .group11{
+  display: block;
+}

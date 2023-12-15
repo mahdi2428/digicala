@@ -1,0 +1,16 @@
+.group1 .li1{
+    display: none;
+}
+.group1.li1:hover{
+    display: block;
+}
+.scrollbar::-webkit-scrollbar{
+    width: 10px;
+}
+.scrollbar::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+.scrollbar::-webkit-scrollbar-thumb{
+    background: rgb(205, 205, 205);
+    border-radius: 5px;
+}
